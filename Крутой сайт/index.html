@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Фотошкола КАДР | Обучение фотографии с нуля</title>
+    <!-- Добавили favicon -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajnOpIShkdRUNHMD7J_8cYXR0E-q-axeWcgdu55HrzlSW683riKXskhxA&s=10" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="header">
+    <!-- Сделали вместо секции с классом header сам тэг header -->
+    <header>
         <div class="napkatext">
+            <!-- Добавили векторное лого в шапку -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTajnOpIShkdRUNHMD7J_8cYXR0E-q-axeWcgdu55HrzlSW683riKXskhxA&s=10" alt="logo">
             <p>Фотошкола "КАДР"</p>
-            <nav class="nav">
+            <!-- Убрали класс nav у тэга nav -->
+            <nav>
                 <a href="#courses">Курсы</a>
                 <a href="#about">О студии</a>
                 <a href="#gallery">Галерея</a>
@@ -21,9 +27,10 @@
         <div class="header-img-container">
             <img src="image/photo_studio1.jpg" alt="Интерьер фотостудии КАДР">
         </div>
-    </section>
+    </header>
 
-    <section class="telotext">
+    <!-- Поменяли telotext на body-text -->
+    <section class="body-text">
         <div class="container hero-content">
             <h1>Искусство видеть свет</h1>
             <p>Научись профессиональной фотографии с нуля до коммерческого уровня. Практика, разбор портфолио и съемка в студии. Мы не просто учим нажимать на кнопку — мы учим видеть кадр.</p>
@@ -70,6 +77,11 @@
                         <span class="stat-number">8</span>
                         <span class="stat-label">Лет на рынке</span>
                     </div>
+                    <!-- Добавили новую характеристику -->
+                    <div class="stat-item">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Менторов</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,19 +92,26 @@
             <h2>Галерея работ наших студентов</h2>
             <p class="gallery-subtitle">Каждый кадр — это результат упорной работы, правильного света и творческого взгляда. Здесь вы можете увидеть лучшие работы наших выпускников, снятые во время практических занятий в студии и на выездных локациях.</p>
             <div class="gallery-grid">
-    <div class="gallery-item">
-        <img src="image/defo.jpg" alt="Портрет">
-    </div>
-    <div class="gallery-item">
-        <img src="image/fashion.jpeg" alt="Фэшн">
-    </div>
-    <div class="gallery-item">
-        <img src="image/clock.jpg" alt="Предметка">
-    </div>
-    <div class="gallery-item">
-        <img src="image/women.jpg" alt="Репортаж">
-    </div>
-</div>
+                <div class="gallery-item">
+                    <img src="image/defo.jpg" alt="Портрет">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/fashion.jpeg" alt="Фэшн">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/clock.jpg" alt="Предметка">
+                </div>
+                <div class="gallery-item">
+                    <img src="image/women.jpg" alt="Репортаж">
+                </div>
+                <!-- Добавили две фотографии -->
+                <div class="gallery-item">
+                    <img src="https://n1s1.hsmedia.ru/3b/d6/66/3bd6666c7406387df0893b11b7df2adb/728x485_1_6909bbce5c7c59e52592bda4fd9357d5@1024x682_0xfirQtHhs_5934658910453902781.png.webp" alt="Репортаж">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://cameralabs.org/media/k2/items/cache/7c8d547d089e7bbbc2b7d6b88f2e7c2c_L.jpg" alt="Репортаж">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -107,6 +126,11 @@
                 <div class="review-card">
                     <p class="review-text">"Школа огонь. Больше всего понравился блок. Я давно снимала, но не знала, как выйти на тот же уровень что и был и брать за свою работу адекватные деньги. Теперь у меня будет стабильное будущее."</p>
                     <p class="review-author">— Виолетта Чернова, курс "Коммерческий фотограф"</p>
+                </div>
+                <!-- Добавлен новый отзыв -->
+                <div class="review-card">
+                    <p class="review-text">"Загорелась желанием делать фотографии и решила записаться на курс. Прошла его с большим удовольствием и сейчас зарабатываю на любимом деле."</p>
+                    <p class="review-author">— Диана Свердлова, курс "Профессиональный фотограф"</p>
                 </div>
             </div>
         </div>
@@ -126,12 +150,15 @@
                     <option value="base">Основы фотографии</option>
                     <option value="portrait">Портретная съемка</option>
                     <option value="commercial">Коммерческая фотография</option>
+                    <!-- Добавлен новый курс -->
+                    <option value="commercial">Профессиональный фотограф</option>
                 </select>
                 <button type="submit" class="btn btn-primary">Отправить заявку</button>
             </form>
 
             <div class="contact-info">
-                <p><strong>Адрес:</strong> г. Тюмень, ул. Пермякова 76,</p>
+                <!-- Поменяли адрес -->
+                <p><strong>Адрес:</strong> г. Тюмень, ул. Луначарского 19,</p>
                 <p><strong>Телефон:</strong> +7 123 4567 89 10</p>
                 <p><strong>Email:</strong> info@kadr-photoschool.ru</p>
                 <p><strong>Режим работы:</strong> Пн-Вс с 10:00 до 22:00</p>
@@ -139,9 +166,11 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- Убрали класс footer у тэга footer -->
+    <footer>
         <div class="container">
-            <p>© 2026 Фотошкола "КАДР". Все права защищены.</p>
+            <!-- Поменяли символ копирайта © на HTML-сущность -->
+            <p>&copy; 2026 Фотошкола "КАДР". Все права защищены.</p>
         </div>
     </footer>
 </body>
